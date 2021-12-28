@@ -40,10 +40,10 @@ stages:
           sonar.projectKey=borderless-geek_BG-Test
           sonar.projectName=BG-Test
     
-    - task: SonarCloudAnalyze@1
-    - task: SonarCloudPublish@1
-      inputs:
-        pollingTimeoutSec: '300'
+    #- task: SonarCloudAnalyze@1
+    #- task: SonarCloudPublish@1
+    #  inputs:
+    #    pollingTimeoutSec: '300'
 
     - task: Maven@3
       displayName: 'Maven Package'
