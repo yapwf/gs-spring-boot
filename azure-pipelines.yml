@@ -49,6 +49,8 @@ stages:
       displayName: 'Maven Package'
       inputs:
         mavenPomFile: 'app/pom.xml'
+        sonarQubeRunAnalysis: true
+        isJacocoCoverageReportXML: true
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
